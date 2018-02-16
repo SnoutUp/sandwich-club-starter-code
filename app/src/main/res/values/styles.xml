@@ -8,4 +8,27 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextBase">
+        <item name="android:textSize">@dimen/base_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="InfoLabel" parent="TextBase">
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:layout_width">@dimen/label_width</item>
+        <item name="android:gravity">top|end</item>
+    </style>
+
+    <style name="InfoText" parent="TextBase">
+        <item name="android:padding">@dimen/text_padding</item>
+    </style>
+
+    <style name="InfoDescriptionText" parent="TextBase">
+        <item name="android:paddingLeft">@dimen/text_padding</item>
+        <item name="android:paddingRight">@dimen/text_padding</item>
+        <item name="android:paddingBottom">@dimen/text_padding</item>
+        <item name="android:paddingTop">0dp</item>
+    </style>
 </resources>
